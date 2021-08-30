@@ -1,0 +1,34 @@
+print('bem vindo a sua calculadora')
+print('para começar a usa-lá voce precisa selecionar uma das opções abaixo: ')
+print('1 - soma')
+print('2 - subtração')
+print('3 - multiplicação')
+print('4 - divisão')
+sinal = int(input('digite a opção aqui: '))
+
+if sinal == 1:
+    soma1 = int(input('digite o primeiro número da soma: '))
+    soma2 = int(input('agora digite o segundo número da soma'))
+    resultado_soma = soma1 + soma2
+    print('a resposta é: {}'.format(resultado_soma))
+
+elif sinal == 2:
+    subtracao1 = int(input('digite o primeiro número da subtração: '))
+    subtracao2 = int(input('agora digite o segundo número da subtração: '))
+    resultado_subtracao = subtracao1 - subtracao2
+    print('a resposta é: {}'.format(resultado_subtracao))
+
+elif sinal == 3:
+    multiplicacao1 = int(input('digite o primeiro número da multiplicação: '))
+    multiplicacao2 = int(input('agora digite o segundo número da multiplicação: '))
+    resultado_multiplicacao = multiplicacao1 * multiplicacao2
+    print ('a resposta é: {}'.format(resultado_multiplicacao))
+
+elif sinal == 4:
+    divisao1 = int(input('digite o primeiro número da divisão: '))
+    divisao2 = int(input('agora digite o segundo número da divisão: '))
+    resultado_divisao = divisao1 / divisao2
+    print ('a resposta é: {}'.format(resultado_divisao))
+
+else :
+    print ('selecione apenas os números de 1 a 4')
